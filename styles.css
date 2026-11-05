@@ -17,7 +17,7 @@ main{max-width:1160px;width:calc(100% - 80px);margin:auto}h2{text-align:center;f
 .logo-row>img,.logo-row>.city-logo-wrap{width:180px;max-width:22%;height:100px;object-fit:contain}
 .logo-row>div{background:transparent;padding:0;letter-spacing:normal}
 .timeline-logo{display:block;max-width:190px;width:auto;height:76px;object-fit:contain;object-position:left center;margin:0 0 18px}
-.city-logo-wrap{background:#315e43!important;padding:12px!important;border-radius:3px}
+.city-logo-wrap{background:transparent!important;padding:0!important;border:0!important;border-radius:0}
 .city-logo-wrap .timeline-logo{margin:0;max-width:100%;height:64px}
 .position-gallery{grid-template-columns:1fr}.position-gallery img{height:auto;max-height:280px;object-fit:contain}
 .meena-sem{margin:20px 0 0}.meena-sem img{width:100%;height:auto;max-height:380px;object-fit:cover}.meena-sem figcaption{font-size:12px;color:#666;margin-top:6px}
@@ -25,13 +25,13 @@ main{max-width:1160px;width:calc(100% - 80px);margin:auto}h2{text-align:center;f
 @media(max-width:760px){.logo-row{gap:14px;flex-wrap:wrap}.logo-row>img,.logo-row>.city-logo-wrap{max-width:44%;width:130px;height:80px}.timeline-logo{height:65px;max-width:170px}}
 
 /* Keep the city identity legible and contained in both placements. */
-.city-logo-wrap{background:#fff!important;border:1px solid #e3e3e3}
+.city-logo-wrap{background:transparent!important;border:0!important;box-shadow:none}
 .logo-row>.city-logo-wrap{display:flex;align-items:center;justify-content:center}
 .logo-row>.city-logo-wrap>img{display:block;width:100%;height:100%;object-fit:contain}
 
-/* NSF REU: separate, unaltered funding and partner marks. */
-.reu-logos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 24px;align-items:center;justify-items:center;background:#fff;padding:16px;margin:0 0 20px;border-radius:3px}
-.reu-logos>img{display:block;width:100%;max-width:175px;height:72px;object-fit:contain}
-.logo-row>.reu-logos{width:260px;max-width:30%;height:auto;padding:12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;background:#fff}
-.logo-row>.reu-logos>img{height:52px;max-width:100%}
-@media(max-width:760px){.logo-row>.reu-logos{width:200px;max-width:48%;gap:10px}.logo-row>.reu-logos>img{height:42px}.reu-logos{gap:16px;padding:12px}.reu-logos>img{height:64px}}
+/* A single unboxed logo row in the overview and the REU timeline card. */
+.logo-row{gap:26px;justify-content:space-between;flex-wrap:nowrap}
+.logo-row>img,.logo-row>.city-logo-wrap{flex:1 1 0;min-width:0;width:130px;max-width:13%;height:90px;object-fit:contain}
+.reu-logos{display:flex;flex-wrap:nowrap;align-items:center;justify-content:space-between;gap:18px;background:transparent;padding:0;margin:0 0 22px;border:0}
+.reu-logos>img{display:block;flex:1 1 0;min-width:0;width:22%;max-width:22%;height:76px;object-fit:contain}
+@media(max-width:760px){.logo-row{gap:20px;overflow-x:auto;padding-bottom:12px}.logo-row>img,.logo-row>.city-logo-wrap{flex:0 0 96px;width:96px;max-width:none;height:72px}.reu-logos{gap:10px}.reu-logos>img{height:56px}}
