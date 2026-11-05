@@ -153,3 +153,6 @@ nav a[aria-current="page"]{color:#b6194b}
 .home-gallery .project-cover{padding:35px}
 .home-gallery .project-cover strong{font-size:28px}
 @media(max-width:760px){.home-gallery .project-cover{padding:18px}.home-gallery .project-cover strong{font-size:18px}.home-gallery .project-cover small{font-size:10px}.presentations-section h3{font-size:22px}}
+
+/* Title covers already contain their labels; do not duplicate them on hover. */
+.text-tile .tile-caption,.home-gallery .gallery-tile.text-tile>span{display:none}
