@@ -203,7 +203,7 @@ footer p{margin:12px 0 0}
   .project-banner h2{font-size:36px}
   .portfolio-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .home-gallery{padding:28px 18px}
-  .tile-caption{opacity:1;justify-content:end;background:linear-gradient(transparent 25%,#000c);padding:12px}
+  .tile-caption{opacity:1;justify-content:end;background:linear-gradient(#0009,#000c);padding:12px}
   .tile-caption strong{font-size:18px}
   .tile-caption small{margin-top:6px}
   .portfolio-index{padding-top:32px}
