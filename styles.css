@@ -7,11 +7,9 @@ main{max-width:1160px;width:calc(100% - 80px);margin:auto}h2{text-align:center;f
 @media(max-width:760px){nav,main{width:calc(100% - 36px)}nav>div{gap:15px}nav>div>a{font-size:13px}.home-hero{height:440px}.hero-title{padding-top:170px}.hero-title h1{font-size:44px}.hero-title h3{font-size:17px}.summary-columns,.about-columns{grid-template-columns:1fr;gap:16px}.journey{gap:8px;min-height:160px}.journey strong{font-size:10px;padding:5px;min-height:70px}.journey span{font-size:9px}.journey small{font-size:9px}.logo-row{gap:12px}.logo-row>div{width:70px;height:70px;font-size:10px}.logo-row b{font-size:13px}.timeline:before{left:16px}.timeline>article{display:flex;flex-direction:column;gap:12px;padding-left:45px;padding-bottom:32px}.timeline>article:after{left:16px}.timeline .date,.timeline>article:nth-child(even) .date{text-align:left;font-size:16px}.timeline>article>div{width:100%}h2{font-size:36px}.home-gallery{padding:25px 18px;gap:12px}.gallery-tile strong{font-size:16px}.gallery-tile>span{opacity:1;background:linear-gradient(transparent,#000b);justify-content:end;padding:12px}.gallery-tile small{font-size:11px}.project-banner{height:230px}.project-banner h2{font-size:42px}.project-row.has-image{grid-template-columns:1fr;gap:20px}.project-media img{height:auto;max-height:430px;object-fit:contain}.inner-hero{height:300px}.inner-hero .hero-title{padding-top:155px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.gallery-tile img{transition:none}}
 
-/* User-selected portfolio portrait */
-.home-hero{background-color:#070707;background-image:linear-gradient(90deg,#0006,#0001),url('assets/alexander-rhee.jpg');background-position:center,right center;background-size:cover,auto 100%;background-repeat:no-repeat}
-.home-hero .hero-title{max-width:850px;text-shadow:0 2px 8px #0008}
+/* User-selected portfolio portrait. */
 .profile-portrait{display:block;width:280px;max-width:100%;height:auto;margin:0 auto 38px}
-@media(max-width:760px){.home-hero{background-position:center,center 27%;background-size:cover,cover}.home-hero .hero-title{background:#0003;max-width:none;padding-bottom:25px}.profile-portrait{width:240px}}
+@media(max-width:760px){.profile-portrait{width:240px}}
 
 /* Organization logos and corrected MEENA media */
 .logo-row>img,.logo-row>.city-logo-wrap{width:180px;max-width:22%;height:100px;object-fit:contain}
@@ -172,9 +170,20 @@ nav a[aria-current="page"]{color:#b6194b}
 @media(max-width:760px){
 .home-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
 .home-gallery .gallery-tile strong{font-size:17px}
-.home-hero{height:560px;background-position:center,center bottom;background-size:cover,auto 65%}
-.home-hero .hero-title{padding:112px 18px 0;background:none}
-.home-hero .hero-title h3{font-size:16px;margin-bottom:18px}
-.home-hero .hero-title h1{font-size:clamp(34px,9vw,44px)}
 }
 @media(max-width:420px){.home-gallery{grid-template-columns:1fr}}
+
+/* Keep the homepage title and portrait within the navigation's centered width. */
+.home-hero{height:530px;background:#070707}
+.home-hero-content{width:calc(100% - 80px);max-width:1180px;height:100%;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:48px;align-items:center}
+.home-hero .hero-title{padding:0;max-width:none;text-align:left;text-shadow:none}
+.home-hero .hero-title h1{font-size:clamp(40px,5vw,64px)}
+.home-hero .hero-portrait{display:block;width:100%;max-width:420px;height:530px;object-fit:contain;object-position:center bottom;justify-self:end;align-self:end}
+@media(max-width:760px){
+.home-hero{height:auto;min-height:560px}
+.home-hero-content{width:calc(100% - 36px);height:auto;min-height:560px;padding-top:112px;grid-template-columns:1fr;gap:24px}
+.home-hero .hero-title{text-align:center}
+.home-hero .hero-title h3{font-size:16px;margin-bottom:18px}
+.home-hero .hero-title h1{font-size:clamp(34px,9vw,44px)}
+.home-hero .hero-portrait{max-width:340px;height:340px;justify-self:center}
+}
