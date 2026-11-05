@@ -35,3 +35,108 @@ main{max-width:1160px;width:calc(100% - 80px);margin:auto}h2{text-align:center;f
 .reu-logos{display:flex;flex-wrap:nowrap;align-items:center;justify-content:space-between;gap:18px;background:transparent;padding:0;margin:0 0 22px;border:0}
 .reu-logos>img{display:block;flex:1 1 0;min-width:0;width:22%;max-width:22%;height:76px;object-fit:contain}
 @media(max-width:760px){.logo-row{gap:20px;overflow-x:auto;padding-bottom:12px}.logo-row>img,.logo-row>.city-logo-wrap{flex:0 0 96px;width:96px;max-width:none;height:72px}.reu-logos{gap:10px}.reu-logos>img{height:56px}}
+
+/* Shared reference-style interior pages. */
+nav a[aria-current="page"]{color:#b6194b}
+.reference-page{background:#fff}
+.reference-page .page-hero{height:525px;background:linear-gradient(#0007,#0007),url('assets/meena-testing.jpeg') center/cover no-repeat}
+.reference-page .page-hero .hero-title{padding:235px 24px 0}
+.reference-page .page-hero h1{font-size:64px;line-height:1.12}
+.reference-page .projects-hero{background-image:linear-gradient(#0008,#0008),url('assets/meena-testing.jpeg');background-position:center,center 52%}
+.reference-page .about-hero{background-image:linear-gradient(#0008,#0008),url('assets/sem-lab.jpeg');background-position:center,center 40%}
+.reference-page .contact-hero{background-image:linear-gradient(#0008,#0008),url('assets/thin-film-instrument.jpeg')}
+.reference-page .resume-hero{background-image:linear-gradient(#0009,#0009),url('assets/meena-testing.jpeg')}
+.reference-page .case-hero{height:270px;background:#000}
+.reference-page .case-hero .hero-title{padding:113px 28px 30px}
+.reference-page .case-hero h1{font-size:40px;max-width:1100px;margin:0 auto;line-height:1.2}
+.reference-page main{max-width:1160px}
+.portfolio-index{padding:22px 0 70px}
+.gallery-intro{text-align:center;font-size:24px;margin:0 0 32px}
+.project-filters{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;margin:0 0 24px}
+.project-filters button{border:0;border-radius:30px;background:#303030;color:#fff;padding:8px 13px;font:700 12px/1.2 Arial,sans-serif;text-transform:uppercase;cursor:pointer}
+.project-filters button[aria-pressed="true"]{background:#888}
+.project-filters button:focus-visible{outline:3px solid #b6194b;outline-offset:4px}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.portfolio-tile{position:relative;display:block;aspect-ratio:4/3;overflow:hidden;background:#191919;text-decoration:none}
+.portfolio-tile[hidden]{display:none}
+.portfolio-tile>img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .25s}
+.tile-caption{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#000b;color:#fff;text-align:center;padding:20px;opacity:0;transition:opacity .2s}
+.tile-caption strong{font-size:23px;line-height:1.3}.tile-caption small{font-size:13px;margin-top:10px}
+.portfolio-tile:hover .tile-caption,.portfolio-tile:focus-visible .tile-caption{opacity:1}
+.portfolio-tile:hover>img{transform:scale(1.035)}
+.project-cover{height:100%;padding:28px;display:flex;flex-direction:column;justify-content:center;color:#fff;background:linear-gradient(145deg,#171717,#313131);border-top:4px solid #a81845}
+.cover-index{color:#aaa;font-size:14px;letter-spacing:3px;margin-bottom:18px}
+.project-cover strong{font-size:25px;line-height:1.25;font-weight:700}
+.project-cover small{color:#bcbcbc;font-size:11px;line-height:1.4;margin-top:16px}
+.pill-button{background:#000;border:0;border-radius:30px;font-weight:bold;padding:14px 30px;letter-spacing:0;cursor:pointer}
+.pill-button:hover{background:#a81845}
+.center-action{text-align:center;margin:35px 0}
+.case-study{padding:35px 0 0}
+.case-study h2{text-align:left;font-size:32px;letter-spacing:0;line-height:1.3;margin:0 0 30px}
+.case-study .organization{font-size:13px;margin-bottom:14px}
+.case-layout{display:grid;grid-template-columns:2fr 1fr;gap:20px;align-items:start}
+.case-media{margin:0}.case-media img{display:block;width:100%;height:auto;max-height:680px;object-fit:contain;background:#f6f6f6}
+.case-media video{display:block;width:100%;height:auto;max-height:650px;background:#111}
+.case-media figcaption{font-size:12px;color:#666;margin:8px 0 20px}
+.case-media img~img{margin-top:24px}
+.case-copy{font-size:20px;line-height:1.38}
+.case-copy h3{font-size:22px;margin:0 0 15px}
+.case-text-only{display:block;max-width:900px}.case-text-only .case-copy{font-size:20px;line-height:1.65}
+.skills-section{padding:65px 0 35px}
+.case-study .skills-section h2,.case-study .related-projects>h2{text-align:center}
+.skills-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;text-align:center;padding:20px 0}
+.skills-grid h3{font-size:22px;margin:0;font-weight:600}
+.related-projects{padding:30px 0 0}
+.related-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.related-grid .project-cover{padding:18px}.related-grid .project-cover strong{font-size:18px}
+.related-grid .project-cover small{font-size:10px}.related-grid .cover-index{margin-bottom:10px}
+.related-grid .tile-caption strong{font-size:18px}
+.project-pagination{width:100%;height:auto;max-width:none;border-top:1px solid #ddd;padding:22px 0 35px;gap:35px}
+.project-pagination a{text-decoration:none;font-size:15px;max-width:46%;font-weight:700}
+.project-pagination a:last-child{text-align:right}
+.project-pagination span{display:block;font-size:12px;font-weight:400;color:#666;margin-top:6px}
+.about-reference{padding:70px 0 20px}
+.about-reference-columns{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+.about-reference p{font-size:18px;line-height:1.65;margin:0 0 28px}
+.about-reference figure{margin:0}.about-reference figure img{display:block;width:100%;height:auto;max-height:650px;object-fit:contain;object-position:top center}
+.about-reference figcaption{font-size:12px;text-align:center;margin-top:10px;color:#666}
+.contact-reference{padding:90px 0 20px}
+.contact-columns{display:grid;grid-template-columns:1.3fr 1fr;gap:12%}
+.contact-columns h2{text-align:left;font-size:40px;margin:0 0 35px;letter-spacing:0}
+.contact-columns label{display:block;font-size:14px;font-weight:bold;margin:0 0 8px}
+.contact-columns label span{color:#b6194b}
+.contact-columns input,.contact-columns textarea{display:block;width:100%;border:1px solid #ddd;background:#fafafa;padding:13px;font:16px Arial,sans-serif;margin:0 0 24px;border-radius:0}
+.contact-columns input:focus,.contact-columns textarea:focus{outline:2px solid #a81845;outline-offset:2px}
+.form-help{font-size:13px;color:#666}
+.contact-info h3{font-size:14px;margin:24px 0 2px}
+.contact-info>a:not(.linkedin-mark){text-decoration:none}
+.contact-info>p{margin-top:22px;color:#666}
+.linkedin-mark{display:inline-block;background:#0077a9;color:#fff;font:bold 30px/1 Arial,sans-serif;text-decoration:none;border-radius:3px;padding:10px 12px}
+.resume-reference{padding:30px 0 20px}.resume-note{text-align:center;color:#666;font-size:14px}
+.web-resume{max-width:900px;margin:35px auto 0;padding:55px;border:1px solid #ddd;background:#fff;box-shadow:0 2px 9px #0001}
+.resume-heading{text-align:center;padding-bottom:25px;border-bottom:2px solid #222}
+.resume-heading h2{font-size:36px;letter-spacing:0}
+.resume-heading p{margin-bottom:5px}
+.web-resume section{padding:25px 0 0}.web-resume section>h3{font-size:22px;border-bottom:1px solid #ccc;padding-bottom:8px;margin:0 0 18px}
+.resume-position{margin-bottom:25px}.resume-position h4{font-size:18px;margin:0 0 5px}
+.resume-position p{margin:0 0 6px}.resume-date{color:#777;font-size:13px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:900px){.case-layout{grid-template-columns:1.35fr 1fr}.related-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-columns{gap:8%}.project-cover strong{font-size:20px}}
+@media(max-width:760px){
+.reference-page .page-hero{height:400px}.reference-page .page-hero .hero-title{padding-top:180px}.reference-page .page-hero h1{font-size:46px}
+.reference-page .case-hero{height:auto;min-height:250px}.reference-page .case-hero .hero-title{padding:115px 18px 40px}.reference-page .case-hero h1{font-size:30px}
+.portfolio-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.portfolio-index{padding-top:25px}
+.gallery-intro{font-size:19px}.project-filters{gap:6px}.project-filters button{font-size:10px;padding:8px 10px}
+.project-cover{padding:18px}.project-cover strong{font-size:18px}.project-cover small{font-size:10px}.cover-index{font-size:11px;margin-bottom:12px}
+.tile-caption{opacity:1;justify-content:end;background:linear-gradient(transparent 25%,#000c);padding:12px}.tile-caption strong{font-size:17px}.tile-caption small{font-size:11px;margin-top:6px}
+.text-tile .tile-caption{display:none}
+.case-layout,.about-reference-columns,.contact-columns{grid-template-columns:1fr;gap:30px}.case-study h2{font-size:26px}
+.case-copy,.case-text-only .case-copy{font-size:18px;line-height:1.6}.skills-section{padding-top:40px}.skills-grid{grid-template-columns:1fr;gap:18px}
+.case-media img{max-height:540px}.case-media video{max-height:540px}
+.about-reference{padding-top:40px}.about-reference p{font-size:17px}.about-reference-columns{gap:15px}
+.contact-reference{padding-top:45px}.contact-columns h2{font-size:32px}
+.web-resume{padding:25px 20px}.resume-heading h2{font-size:30px}
+.project-pagination{gap:20px}.project-pagination a{font-size:13px}.project-pagination span{font-size:11px}
+}
+@media(max-width:420px){.portfolio-index>.portfolio-grid{grid-template-columns:1fr}.portfolio-index .portfolio-tile{aspect-ratio:4/3}.portfolio-index .project-cover strong{font-size:26px}.related-grid .project-cover strong{font-size:16px}.related-grid .project-cover small{display:none}}
+@media(prefers-reduced-motion:reduce){.portfolio-tile>img,.tile-caption{transition:none}}
