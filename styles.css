@@ -161,3 +161,6 @@ nav a[aria-current="page"]{color:#b6194b}
 .contact-info-only{max-width:760px!important;padding:60px 0;text-align:center}
 .contact-info-only .contact-info>h2{text-align:center;font-size:36px;letter-spacing:0;margin-bottom:28px}
 .contact-info-only .contact-info>#current-resume{font-size:18px;color:#252525;margin-top:30px}
+
+/* Give project titles enough room on narrow phones. */
+@media(max-width:420px){.home-gallery,.related-grid{grid-template-columns:1fr}.related-grid .project-cover strong{font-size:22px}}
