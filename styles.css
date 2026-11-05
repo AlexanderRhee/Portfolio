@@ -140,3 +140,16 @@ nav a[aria-current="page"]{color:#b6194b}
 }
 @media(max-width:420px){.portfolio-index>.portfolio-grid{grid-template-columns:1fr}.portfolio-index .portfolio-tile{aspect-ratio:4/3}.portfolio-index .project-cover strong{font-size:26px}.related-grid .project-cover strong{font-size:16px}.related-grid .project-cover small{display:none}}
 @media(prefers-reduced-motion:reduce){.portfolio-tile>img,.tile-caption{transition:none}}
+
+/* Curated work and presentations, separate from the project gallery. */
+.curation-intro{text-align:center;max-width:760px;margin:-14px auto 28px;color:#666}
+.project-count{text-align:center;font-size:13px;color:#777;margin:0 0 18px}
+.presentations-section{padding:70px 0 0;scroll-margin-top:35px}
+.presentations-section>h2{font-size:36px;margin-bottom:25px}
+.presentations-section>article{max-width:850px;margin:auto;padding:25px 0;border-top:1px solid #ddd}
+.presentations-section h3{margin:8px 0 16px;font-size:26px}
+.about-subheading{text-align:left;font-size:24px;letter-spacing:0;margin:0 0 15px}
+#activities,#personal,#meena,#first-solar{scroll-margin-top:35px}
+.home-gallery .project-cover{padding:35px}
+.home-gallery .project-cover strong{font-size:28px}
+@media(max-width:760px){.home-gallery .project-cover{padding:18px}.home-gallery .project-cover strong{font-size:18px}.home-gallery .project-cover small{font-size:10px}.presentations-section h3{font-size:22px}}
