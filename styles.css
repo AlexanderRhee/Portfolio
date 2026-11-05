@@ -156,3 +156,8 @@ nav a[aria-current="page"]{color:#b6194b}
 
 /* Title covers already contain their labels; do not duplicate them on hover. */
 .text-tile .tile-caption,.home-gallery .gallery-tile.text-tile>span{display:none}
+
+/* Contact page contains direct contact information only. */
+.contact-info-only{max-width:760px!important;padding:60px 0;text-align:center}
+.contact-info-only .contact-info>h2{text-align:center;font-size:36px;letter-spacing:0;margin-bottom:28px}
+.contact-info-only .contact-info>#current-resume{font-size:18px;color:#252525;margin-top:30px}
